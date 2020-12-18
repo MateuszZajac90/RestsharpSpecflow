@@ -69,19 +69,36 @@ namespace RestSharpDemo.Features
             testRunner.CollectScenarioErrors();
         }
         
+        public virtual void FeatureBackground()
+        {
+#line 3
+#line hidden
+            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Email",
+                        "Password"});
+            table1.AddRow(new string[] {
+                        "nilson@email.com",
+                        "nilson"});
+#line 4
+ testRunner.Given("I get JWT authentication of User with following details", ((string)(null)), table1, "Given ");
+#line hidden
+        }
+        
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Verify author of the posts 1")]
         public virtual void VerifyAuthorOfThePosts1()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify author of the posts 1", null, ((string[])(null)));
-#line 3
+#line 8
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 4
+#line 3
+this.FeatureBackground();
+#line 9
  testRunner.Given("I perform GET operation for \"posts/{postid}\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 5
+#line 10
  testRunner.And("I perform operation for post \"1\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 6
+#line 11
  testRunner.Then("I should see the \"author\" name as \"Mateusz\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -92,15 +109,17 @@ this.ScenarioInitialize(scenarioInfo);
         public virtual void VerifyAuthorOfThePosts2()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify author of the posts 2", null, ((string[])(null)));
-#line 8
+#line 13
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 9
+#line 3
+this.FeatureBackground();
+#line 14
  testRunner.Given("I perform GET operation for \"posts/{postid}\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 10
+#line 15
  testRunner.And("I perform operation for post \"2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 11
- testRunner.Then("I should see the \"author\" name as \"Zajac\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 16
+ testRunner.Then("I should see the \"author\" name as \"Adam\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -110,15 +129,17 @@ this.ScenarioInitialize(scenarioInfo);
         public virtual void VerifyAuthorOfThePosts4()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify author of the posts 4", null, ((string[])(null)));
-#line 14
+#line 18
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 15
+#line 3
+this.FeatureBackground();
+#line 19
  testRunner.Given("I perform GET operation for \"posts/{postid}\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 16
+#line 20
  testRunner.And("I perform operation for post \"4\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 17
- testRunner.Then("I should see the \"author\" name as \"Johnny\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 21
+ testRunner.Then("I should see the \"author\" name as \"Bogdan\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

@@ -105,6 +105,7 @@
     </Compile>
     <Compile Include="Hooks\TestInitialize.cs" />
     <Compile Include="Model\Posts.cs" />
+    <Compile Include="Steps\CommonSteps.cs" />
     <Compile Include="Steps\GetPostsSteps.cs" />
     <Compile Include="Steps\PostProfileSteps.cs" />
     <Compile Include="UnitTest1.cs" />
@@ -122,6 +123,9 @@
       <LastGenOutput>PostProfile.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <EmbeddedResource Include="TestData\Data.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

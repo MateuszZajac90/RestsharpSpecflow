@@ -76,7 +76,7 @@ namespace RestSharpDemo.Features
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Post operation for Profile", null, new string[] {
                         "smoke"});
-#line 5
+#line 4
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line hidden
@@ -84,12 +84,12 @@ this.ScenarioInitialize(scenarioInfo);
                         "name",
                         "profile"});
             table1.AddRow(new string[] {
-                        "Sams",
-                        "2"});
-#line 6
+                        "Mams",
+                        "3"});
+#line 5
  testRunner.Given("I Perform POST operation for \"/posts/{profileNo}/profile\" with body", ((string)(null)), table1, "Given ");
-#line 9
- testRunner.Then("I should see the \"name\" name as \"Sams\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 8
+ testRunner.Then("I should see the \"name\" name as \"Mams\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
